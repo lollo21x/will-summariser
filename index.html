@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatbot di riassunto</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1>Will Summariser<span class="betabox">Beta</span></h1>
+		<textarea id="input-text" class="textarea" placeholder="Cosa vuoi riassumere oggi?" style="background-color: #FFF;"></textarea>
+		<button class="button" onclick="summarize()" style="background-color: #ffc34f;">Riassumi</button>
+		<div class="result" style="border-color: #ccc;">
+			<h3 class="result-title">Risultato del riassunto:</h3>
+			<p id="output-text"></p>
+			<div id="loading-spinner" class="loading" style="display: none;">
+				<i class="fas fa-spinner fa-spin"></i>
+			</div>
+			<div id="loading-message" class="loading-message">L'IA sta elaborando il riassunto...</div>
+			<button class="copy-button" onclick="copySummary()">Copia il riassunto</button>
+			<div id="copy-success" class="copy-success" style="display: none;">Testo riassunto copiato!</div>
+		</div>
+		<div class="disclaimer">
+			Il modello è attualmente in fase di test e potrebbe fornire informazioni errate, è preferibile l'uso della lingua inglese. Versione 2.6 | 24/07/23
+		</div>
+	</div>
+</body>
+</html>
