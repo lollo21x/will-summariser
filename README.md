@@ -5,3 +5,5 @@ Here are some of the benefits of Will Summariser:
 * The summaries are accurate and informative.
 * Will Summariser is still under development, but it has already proven to be a powerful tool for quickly summarizing complex texts.
 * If you are interested in learning more about Will Summariser, visit the Lamp Inc. website.
+
+_It uses free APIs from Hugging Face (https://api-inference.huggingface.co/models/facebook/bart-large-cnn)_
